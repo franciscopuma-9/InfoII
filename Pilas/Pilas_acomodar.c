@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "estructuras_char.h"
 
 int main(void) {
@@ -10,17 +11,18 @@ int main(void) {
     inicializacion(p);
 
     //Ingreso elementos
-    char cadena[10] = "francisco";
+    char cadena[100] = "francisco(dsad){]";
 
-    for (int i = 0; i < 9; i++){
+    for (int i = 0; i < strlen(cadena); i++){
         push(p, cadena[i]);
     }
 
     mostrar(p);
-
     for (int x = 0; x < 9; x++){
-        cadena[x] = pop(p);
+        char aux = pop(p);
+        
     }
+    
     printf("%s", cadena);
 
     return 0;
