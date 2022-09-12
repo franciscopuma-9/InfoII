@@ -16,7 +16,7 @@ void carga(struct fecha *vec){  //funcion para la carga de valores de la fecha
 		scanf("%d", &vec[x].dd);
 		printf("Ingrese mes: ");
 		scanf("%d", &vec[x].mm);
-		printf("Ingrese año: ");
+		printf("Ingrese aï¿½o: ");
 		scanf("%d", &vec[x].aa);
 		
 	}
@@ -31,11 +31,7 @@ void carga(struct fecha *vec){  //funcion para la carga de valores de la fecha
 		for ( int x = 0; x < TAM; x++){ //utilizo un bucle para poder imprimer todas las fechas almacenadas en el puntero
 			int mes = vec[x].mm - 1; //guardo en una variable el valor del mes para poder imprimirlo despues
 			printf("%d de %s de %d\n", vec[x].dd, meses[mes], vec[x].aa); //imprimo la fecha ordenada con el mes puesto en palabras
-		}
-
-		
-		
-		
+		}		
 		
 		return 0;
 	}

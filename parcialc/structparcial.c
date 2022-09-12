@@ -3,13 +3,13 @@
 
 struct tiempo
 {
-    int hh;
-    int mm;
-    int ss;
+    short int hh;
+    short int mm;
+    short int ss;
 };
 
-void carga(struct tiempo *vec){
-    for(int x = 0; x < 4; x ++){
+void carga(struct tiempo *vec, int n){
+    for(int x = 0; x < n; x ++){
         printf("Ingrese hora: ");
         scanf("%d", &vec[x].hh);
         printf("Ingrese minutos: ");
@@ -27,7 +27,7 @@ int main (){
     scanf("%d", &n);
     struct tiempo * vec;
     vec = malloc(sizeof(struct tiempo)*n);
-    carga(vec);
+    carga(vec, n);
     int sumahh = vec[0].hh;
     int sumamm = vec[0].mm;
     int sumass = vec[0].ss;
@@ -46,6 +46,7 @@ int main (){
         sumamm = sumamm % 60;
     }
     printf("%d:%d:%d", sumahh, sumamm, sumass);
+    free();
     
 
 

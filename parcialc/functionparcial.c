@@ -7,7 +7,6 @@ void area_vol(float * r, float * a, float *v){
 }
 
 
-
 int main (void){
     float radio, area, volumen;
     do
