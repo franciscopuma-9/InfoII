@@ -50,7 +50,7 @@ Arreglo Arreglo:: operator=(const Arreglo &o){
 }
 
 
-
+    
 int main(){
 
 
