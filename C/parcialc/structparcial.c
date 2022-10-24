@@ -46,7 +46,7 @@ int main (){
         sumamm = sumamm % 60;
     }
     printf("%d:%d:%d", sumahh, sumamm, sumass);
-    free();
+    free(vec);
     
 
 

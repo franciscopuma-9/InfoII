@@ -1,45 +1,45 @@
-# coeficiente = input("Ingrese coeficiente:")
-# bandera = True
-# while bandera:
-#     if '.' in coeficiente or coeficiente.isdigit() or '-' in coeficiente:
-#         coeficiente = float(coeficiente)
-#         bandera = False
-#     else: 
-#         coeficiente = input("Ingrese coeficiente:")
-# coeficiente = float(coeficiente)
+coeficiente = input("Ingrese coeficiente:")
+bandera = True
+while bandera:
+    if '.' in coeficiente or coeficiente.isdigit() or '-' in coeficiente:
+        coeficiente = float(coeficiente)
+        bandera = False
+    else: 
+        coeficiente = input("Ingrese coeficiente:")
+coeficiente = float(coeficiente)
 
-# ti = input("Ingrese ti:")
-# bandera = True
-# while bandera:
-#     if '.' in ti or ti.isdigit() or '-' in ti:
-#         ti = float(ti)
-#         bandera = False
-#     else: 
-#         ti = input("Ingrese ti:")
-# ti = float(ti)
+ti = input("Ingrese ti:")
+bandera = True
+while bandera:
+    if '.' in ti or ti.isdigit() or '-' in ti:
+        ti = float(ti)
+        bandera = False
+    else: 
+        ti = input("Ingrese ti:")
+ti = float(ti)
 
-# print("Recta:"+str(coeficiente)+'x + '+str(ti))
+print("Recta:"+str(coeficiente)+'x + '+str(ti))
 
-# print("Condicion paralelismo.\nDos rectas son paralelas si tienen la misma pendiente(coeficiente) y cambia su TI")
-# print("Primer paralela:", coeficiente,"x +", ti+2)
-# print("Primer paralela:", coeficiente,"x +", ti*2)
-# print("Primer paralela:", coeficiente,"x +", ti-1)
+print("Condicion paralelismo.\nDos rectas son paralelas si tienen la misma pendiente(coeficiente) y cambia su TI")
+print("Primer paralela:", coeficiente,"x +", ti+2)
+print("Primer paralela:", coeficiente,"x +", ti*2)
+print("Primer paralela:", coeficiente,"x +", ti-1)
 
-# nuevo_coeficiente = -1/coeficiente
-# print("Condicion perpendicularidad")
-# print("Primer paralela:", nuevo_coeficiente,"x +", ti+1)
-# print("Primer paralela:", nuevo_coeficiente,"x +", ti*0.5)
-# print("Primer paralela:", nuevo_coeficiente,"x +", ti-2)
+nuevo_coeficiente = -1/coeficiente
+print("Condicion perpendicularidad")
+print("Primer paralela:", nuevo_coeficiente,"x +", ti+1)
+print("Primer paralela:", nuevo_coeficiente,"x +", ti*0.5)
+print("Primer paralela:", nuevo_coeficiente,"x +", ti-2)
 
 
 
-# corteX = -ti/coeficiente
-# corteY = ti
-# def comportamientoRecta(coeficiente):
-#     if coeficiente < 0:
-#         print("Es decreciente")
-#     else:
-#         print("Es creciente")
+corteX = -ti/coeficiente
+corteY = ti
+def comportamientoRecta(coeficiente):
+    if coeficiente < 0:
+        print("Es decreciente")
+    else:
+        print("Es creciente")
 
 from math import sqrt 
 
@@ -74,6 +74,7 @@ while bandera:
     else: 
         c = input("Ingrese valor de c:")
 c = float(c)
+
 #raices corte eje x
 if ((b*b - (4*a*c))) < 0:
     print("No posee soluciones reales. Tiene raices imaginarias.")
