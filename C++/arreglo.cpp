@@ -8,13 +8,12 @@ class Arreglo{
         int T;
 
     public:
+        //prototipos
         Arreglo(int a=10);
         Arreglo(const Arreglo & b);
         ~Arreglo();
         Arreglo operator=(const Arreglo &);
-        Arreglo operator+(const Arreglo &);
-
-
+        Arreglo operator+(Arreglo &);
 
 };
 
@@ -38,6 +37,11 @@ Arreglo::Arreglo(const Arreglo & b){
         T = b.T;
     }
     p = new int [T];
+    for(int i = 0; i < T;i++)
+        {
+            p[i]= b.p[i];
+        }
+    
 }
 
 Arreglo::~Arreglo(){
@@ -64,8 +68,20 @@ Arreglo Arreglo:: operator=(const Arreglo &o){
     return *this; //devuelve el objeto actual(this es un puntero de referencia al objeto actual)
 }
 
-Arreglo Arreglo::operator+(const Arreglo &o);{
-    
+Arreglo Arreglo:: operator+(Arreglo &o){
+    int max_T;
+    Arreglo u;
+    if (o.T <= T){
+        u.T = T; 
+    }
+    else {
+        u.T = o.T;
+    }
+    u.p = new int [max_T];
+    for(int x = 0; x < max_T;x++){
+        u.p[x]= o.p[x] + p[x];  
+    }
+    return *this;
 }
     
 int main(){

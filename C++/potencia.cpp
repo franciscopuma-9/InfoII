@@ -8,10 +8,10 @@ void Potencia(int *p){*p = *p * *p;}
 
 
 int main (){
-    int *p;
-    *p = 4;
+    int p;
+    p = 4;
     Potencia(p);
-    cout<< p;
+    cout<< *p;
 
     return 0;
 }
