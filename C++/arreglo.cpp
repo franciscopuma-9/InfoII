@@ -16,7 +16,7 @@ class Arreglo{
         Arreglo operator+(Arreglo &);
 
 };
-
+//implementaciones
 Arreglo::Arreglo(int a){
     if( a < 1){
         T = 10;

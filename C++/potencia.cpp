@@ -8,6 +8,8 @@ int Potencia(int a){return a*a;} //por valor
 void Potencia(int *p){*p = *p * *p;} //por referencia de puntero //pone la potencia en la misma posicion de memoria
 //res = Potencia(&p)
 
+//por referencia de puntero y referencia funcionan igual 
+
 int Potencia_ref(int &r){r = r * r;} //por referencia 
 //res = Potencia(a)  //puede tener problemas en sobrecarga de funciones porque se pasa igual que por valor
 
@@ -24,7 +26,7 @@ int main (){
     int res = Potencia(b); //valor
     cout << res << endl;
 
-    Potencia(&b); // puntedo
+    Potencia(&b); // puntero
     cout << b << endl;
 
     Potencia_ref(b);//por referencia

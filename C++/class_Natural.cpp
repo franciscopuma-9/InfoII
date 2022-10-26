@@ -14,7 +14,7 @@ int main() {
 	cout << a.Mostrar();
 	a.setN(10);
 	cout << a.Mostrar();
-	//el metoro set permite controlar los valores que se pueden asignar al objeto:
+	//el metodo set permite controlar los valores que se pueden asignar al objeto:
 	a.setN(-4);
 	cout << a.getN()<<endl;
 	a.setN(4);

@@ -7,7 +7,6 @@
 //Implementacion del constructor por defecto, solo inicializa a 0 el atributo privado
 Natural::Natural() {
 	n = 0;
-
 }
 //Implementacion del constructor ordinario: recibe como argumento el valor a asignar al atributo
 Natural::Natural(int v){

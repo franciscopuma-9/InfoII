@@ -7,6 +7,7 @@ protected:
     float altura;
     float base;
 public:
+    //prototipos
     Rectangulo();
     Rectangulo(float a, float b);
     bool esCuadrado(void);
@@ -19,6 +20,7 @@ public:
     int getAltura(void);
     int getBase(void);
 };
+//imprementacion
 Rectangulo::Rectangulo(){
     altura = 1;
     base = 1;

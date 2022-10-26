@@ -14,7 +14,7 @@ Componente::Componente(){
     cant = 0;
     Nombre = "Componente";
 }
-
+//herencia, utilizamos la clase hija Resistencia que tiene de clase padre a Componente
 class Resistencia: Componente{ //se puede agregar private/public/protected, por defecto private
 private:
     int tolerancia;

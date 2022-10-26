@@ -12,6 +12,7 @@ double suma(double r, double i){
 class Complejo {
     double real, imag;
 public:
+    //prototipos
     Complejo(double r=0, double i=0){real = r; imag = i;}
     Complejo(const Complejo & c){real = c.real; imag= c.imag;}
     void Set(double r=0, double i=0){real = r; imag = i;}
@@ -22,7 +23,7 @@ public:
     Complejo operator+(Complejo &c);
     Complejo operator-(Complejo &c);
     Complejo operator=(Complejo &c);
-    double abs(void);
+    double abs(void);//valor absoluto
 
 
 friend Complejo sumar(Complejo &c, Complejo &d){
