@@ -9,9 +9,12 @@ class Arreglo{
 
     public:
         Arreglo(int a=10);
-        //Arreglo(const Arreglo & b);
+        Arreglo(const Arreglo & b);
         ~Arreglo();
-        Arreglo operator= (const Arreglo &);
+        Arreglo operator=(const Arreglo &);
+        Arreglo operator+(const Arreglo &);
+
+
 
 };
 
@@ -25,6 +28,18 @@ Arreglo::Arreglo(int a){
     }
     p = new int [T]; //memoria dinamica
 }
+
+Arreglo::Arreglo(const Arreglo & b){
+    delete [] p;
+    if (b.T < 1){
+        T = 10;
+    }
+    else{
+        T = b.T;
+    }
+    p = new int [T];
+}
+
 Arreglo::~Arreglo(){
     delete [] p; //libera memoria asignada al puntero p. [] para que sepa que es un vector, sino solo libera la primer posicion de memoria
 }
@@ -49,7 +64,9 @@ Arreglo Arreglo:: operator=(const Arreglo &o){
     return *this; //devuelve el objeto actual(this es un puntero de referencia al objeto actual)
 }
 
-
+Arreglo Arreglo::operator+(const Arreglo &o);{
+    
+}
     
 int main(){
 
